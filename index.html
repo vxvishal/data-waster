@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Data Waster</title>
+</head>
+
+<body>
+    <h1 id="page-title">Data Waster</h1>
+    <!-- Settings -->
+    <div class="settings" id="advanceOptions">
+        <div class="settings-option">
+            <h1>Threads</h1><br>
+            <input style="width: 500px" value="1" type="range" min="1" max="8" id="threadsRange"><br><br>
+            <h3>Higher value = faster wasting</h3>
+        </div>
+        <br>
+        <div class="settings-option">
+            <h1>Data limit</h1><br>
+            <input class="mb-input" type="number" id="stopafter" value="0">
+            <span style="font-size: 25px">MB</span><br><br>
+            <h3>0 = unlimited</h3>
+        </div>
+    </div>
+    <!--Settings end-->
+    <div style="text-align: center"><button class="start-stop" id="startBtn">Start</button></div>
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-content">
+                <h5>Data Wasted</h5>
+                <p id="dataWatsedText">0 MB</p>
+            </div>
+        </div>
+        <div class="stat">
+            <div class="stat-content">
+                <h5>Time Running</h5>
+                <p id="timeRunningText">0 sec</p>
+            </div>
+        </div>
+        <div class="stat">
+            <div class="stat-content">
+                <h5>Speed</h5>
+                <p id="averageSpeedText">0 MBps</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

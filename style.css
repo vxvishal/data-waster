@@ -1,0 +1,103 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    background-color: #323232;
+    color: #29C7AC;
+    font-family: monospace;
+}
+
+#page-title
+{
+    font-size: 45px;
+    text-align: center;
+    margin: 20px 0 50px 0;
+}
+
+#testing
+{
+    height: 200px;
+    background-color: black;
+}
+
+.settings 
+{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.settings-option 
+{
+    margin-top: 40px;
+}
+
+.mb-input 
+{
+    height: 30px;
+    width: 80px;
+    font-size: 25px;
+    text-align: right;
+    background-color: #323232;
+    border: 1px solid #29C7AC;
+    border-radius: 2px;
+    color: #29C7AC;
+}
+
+.start-stop {
+    display: inline-block;
+    text-align: center;
+    padding: 0.5em 1.7em;
+    margin: 20px 0 15px 0;
+    border: 0.16em solid #29C7AC;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    background-color: #323232;
+    color: #ffffff;
+    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+    text-align: center;
+    transition: all 0.2s;
+  }
+  
+  .start-stop:hover {
+    color: #323232;
+    background-color: #29C7AC;
+    /* border: 0.16em solid white; */
+  }
+
+
+.stats
+{
+    display: flex;
+    justify-content: center;
+}
+
+h1
+{
+    font-size: 35px;
+}
+ 
+.stat
+{
+    display: flex;
+    width: 300px;
+    height: 90px;
+    margin: 4px;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid cyan; 
+}
+
+.stat-content
+{
+    text-align: center;
+}
