@@ -14,8 +14,14 @@ html
 #page-title
 {
     font-size: 45px;
-    text-align: center;
+    text-decoration: none;
+    color: #29C7AC;
     margin: 20px 0 50px 0;
+}
+
+#page-title:hover
+{
+    text-decoration: underline;
 }
 
 #testing
@@ -35,6 +41,11 @@ html
     margin-top: 40px;
 }
 
+#threadsRange
+{
+    width: 50%;
+}
+
 .mb-input 
 {
     height: 30px;
@@ -47,7 +58,8 @@ html
     color: #29C7AC;
 }
 
-.start-stop {
+.start-stop 
+{
     display: inline-block;
     text-align: center;
     padding: 0.5em 1.7em;
@@ -64,14 +76,21 @@ html
     text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
     text-align: center;
     transition: all 0.2s;
-  }
-  
-  .start-stop:hover {
+}
+
+.start-stop:hover 
+{
+    cursor: pointer;
     color: #323232;
     background-color: #29C7AC;
-    /* border: 0.16em solid white; */
-  }
+}
 
+
+h1
+{
+    text-align: center;
+    font-size: 35px;
+}
 
 .stats
 {
@@ -79,11 +98,7 @@ html
     justify-content: center;
 }
 
-h1
-{
-    font-size: 35px;
-}
- 
+
 .stat
 {
     display: flex;
@@ -100,4 +115,27 @@ h1
 .stat-content
 {
     text-align: center;
+}
+
+@media only screen and (max-width: 768px) 
+{
+    #page-title
+    {
+        text-decoration: underline;
+    }
+    #threadsRange
+    {
+        width: 60%;
+    }    
+
+    .stats
+    {
+        display: block;
+    }
+
+    .stat
+    {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
 }
